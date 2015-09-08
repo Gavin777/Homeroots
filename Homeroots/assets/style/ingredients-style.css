@@ -182,19 +182,22 @@
 
 
 
-@media (max-width: 540px) {
+@media (min-height:900px) {
+	.ing-grid-title {
+		font-size: 48px;
+	}
+	.logo {
+		width:70%;
+	}
 	#sticky-ing {
 		z-index: 15;
 		width: 75%;
 		left: 27%;
 		top: 5%;
 	}
-	#big-text {
-		font-size: 10.5px;
-	}
 	#ing-wrapper {
 		/* overflow: hidden !important; */
-		height: 740px;
+		height: 1400px;
 	}
 
 	#grid-wrapper {
@@ -205,6 +208,7 @@
 		z-index: 15;
 	}
 	#ing-desc-wrapper {
+		position: fixed;
 		width: 75%;
 		height: auto;
 		padding-top: 40px;
@@ -212,7 +216,7 @@
 		left: 27%;
 		/* right: 30px; */
 		/* right: 35px; */
-		font-size:12px;
+		font-size:24px;
 		/* margin-bottom: 30px; */
 		color:gray;
 		font-family: latin_modern_mono10_regular;

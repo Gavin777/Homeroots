@@ -100,7 +100,10 @@
 	margin-bottom: 70px;
 }
 
-@media (max-width: 640px) {
+@media (min-height: 900px) {
+	.summary {
+		font-size: 40px;
+	}
 	.landing-wrapper {
 		display: none;
 	}
@@ -128,7 +131,8 @@
 	}
 
 	#list-summary {
-		margin-bottom: 100px;
+		width: 100%;
+		margin-bottom: 25%;
 	}
 
 	#end {
@@ -143,15 +147,8 @@
 	}
 
 	.footer {
-		height: 30px;
 		position: absolute;
-		bottom: -60px;
+		bottom: -150px;
 		background: white;
-	}
-	.footer-border{
-		display: none;
-	}
-	.footer-row-two {
-		color: black;
 	}
 }

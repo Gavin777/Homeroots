@@ -27,6 +27,35 @@ body {
 	background: url(../images/pink.gif) center no-repeat #fff;
 }
 */
+/* landing page */
+.landing-desc {
+    color: white;
+    z-index: 100;
+    width: 400px;
+    position: absolute;
+    line-height: 1.5em;
+    font-size: 12px;
+    font-family: latin_modern_mono10_regular;
+    right: calc(50% - 200px);
+    text-align:center;
+
+}
+
+#landing-desc-home {
+	top:calc(50% - 50px);
+}
+
+.landing-desc-pages {
+	top:calc(50% + 10px);
+}
+.icon {
+	width: 36px;
+    position: absolute;
+    z-index: 5;
+    right: 6px;
+    top:60px;
+}
+
 /*The Navigation and Menu */
 .menu-div {
 	position:fixed;
@@ -81,6 +110,9 @@ a:hover {
 	z-index:7;
 	top:0;
 	right:0;
+	-webkit-transform: translateX(400px);
+	-moz-transform: translateX(400px);
+	-o-transform: translateX(400px);
 	transform: translateX(400px);
 	transition:0.5s;
 
@@ -109,6 +141,9 @@ ul {
 }
 
 .menu-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
@@ -190,7 +225,7 @@ li {
 .logo {
 	opacity: 0;
 	transition: 1s;
-	width:50%;
+	width:38%;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -203,7 +238,7 @@ li {
 
 #row-wrapper {
 	position:relative;
-	width: 95%;
+	width: 90%;
 	height:300px; 
 	background:white;
 	overflow:hidden;
@@ -214,7 +249,7 @@ li {
 
 .option {
 	position:absolute;
-	width: 30%;
+	width: 33%;
 	height:300px;
 	margin: auto;
 	overflow:hidden;
@@ -229,11 +264,11 @@ li {
 }
 
 #works {
-	margin-left: 35%;
+	margin-left: 33.5%;
 }
 
 #ingredients {
-	margin-left: 70%;
+	margin-left: 67%;
 }
 
 #flowers {
@@ -353,11 +388,12 @@ li {
 
 
 .footer-row-two {
+	width: 100%;
+	text-align: center;
 	color:white;
 	font-size:8px;
 	position:absolute;
 	bottom:12px;
-	left:calc(50% - 175px);
 	font-family: Roboto;
 }
 
@@ -433,14 +469,17 @@ float: none !important;
 
 }
 
-@media (max-width: 540px) {
+@media (min-height:900px) {
+	.picture {
+		margin-left:25%;
+	}
 	.landing-wrapper {
 		display: none;
 	}
 
 	.logo {
 		opacity: 1;
-		width: 100%;
+		width: 70%;
 		padding-top: 25px;
 	}
 
@@ -452,6 +491,7 @@ float: none !important;
 	.content-wrapper {
 		position: absolute;
 		top: 0px;
+		height:1600px;
 	}
 
 	.option {
@@ -471,12 +511,8 @@ float: none !important;
 	}
 
 	#row-wrapper {
-		height: 1050px;
+		height: 100%;
 		overflow: visible;
-	}
-
-	.content-wrapper {
-		height: 1400px;
 	}
 
 	.footer {
@@ -490,5 +526,7 @@ float: none !important;
 	}
 	.footer-row-two {
 		color: black;
+		font-size: 20px;
+
 	}
 }
